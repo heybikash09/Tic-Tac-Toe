@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: yellow;
+    font-family:  Geneva, Verdana, sans-serif;
+}
+nav{
+    background-color:black;
+    display: flex;
+   
+    height: 3em;
+}
+.nav li{
+    display: inline-flex;
+    color: #f2f3f0;
+    margin-left: 3em;
+    margin-top: 1em;
+    align-items: center;
+   justify-content: center;
+   text-align: center;
+   transition: all 0.111s ease-in;
+   border-radius: 5px;
+}
+li:hover{
+    transform: scale(1.5);
+    background-color: gray;
+}
+.gamecontainer{
+    width: 80vw;
+    height: 80vh;
+    background-color: rgb(1, 1, 18);
+    margin-left: 9vw;
+    margin-top: 3em;
+    position: fixed;
+    
+}
+.container{
+    width: 500px;
+    height:500px;
+    margin-left: 10em;
+    margin-top: 2.5em;
+    background-color: rgb(2, 2, 57);
+    display: grid;
+    grid-template-rows: repeat(3,167px);
+    grid-template-columns: repeat(3,167px);
+}
+.msginfo{
+    width: 15em;
+    height: 7em;
+    color: rgb(46, 7, 221);
+    background-color: #fff;
+    position: fixed;
+    right: 12em;
+    top: 7em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    border-radius: 28px;
+    }
+    .winmsg{
+        width: 0vw;
+        height: 40vh;
+        position: fixed;
+        top: 4em;
+        left: 8em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 3em;
+        color: rgb(137, 135, 132);
+        z-index: 9;
+        background-color: rgb(3, 33, 98);
+        border: 2px solid black;
+        border-radius: 20px;
+        opacity: 0%;
+        transition: all 1s ease-in;
+    }
+.box{
+    border: 2px solid white;
+    font-size: 8em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+#gif{
+    width: 0em;
+    height: 0em;
+    position: fixed;
+    left: 38em;
+    top: 4em;
+    border-radius: 10em;
+    transition: all 1s ease-in;
+}
+
+#line{
+    width: 0em;
+    height: 0.3em;
+    background-color: pink;
+    position: absolute;
+    left: 11.5em;
+    top: 9em;
+    transition: all 1s ease-in-out;
+    transform: rotate(135deg) translate(7em,-6.5em);
+
+}
+.box:hover{
+    background-color: #172004;
+}
+
+.bl-0{
+    border-left: 0;
+}
+.bt-0{
+    border-top: 0;
+}
+.br-0{
+    border-right: 0;
+}
+.bb-0{
+    border-bottom: 0;
+}
